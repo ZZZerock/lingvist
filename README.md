@@ -16,5 +16,5 @@
 делаем проверку от дураков
 -----------------------------------
 
-ВК-[Вконтакте](https://vk.com/genjimainlol)
-[Ссылка](https://github.com/ZZZerock/lingvist/blob/main/slovarik)
+ВК-[Вконтакте](https://vk.com/genjimainlol), 
+Работа-[Ссылка](https://github.com/ZZZerock/lingvist/blob/main/slovarik)
