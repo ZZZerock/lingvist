@@ -9,4 +9,4 @@
 3. делаем проверку от дураков
 ## ВК-[Вконтакте](https://vk.com/genjimainlol), 
 ## Работа-[Ссылка](https://github.com/ZZZerock/lingvist/blob/main/slovarik)
-# ![GENJI]:https://wallpaperscave.ru/images/original/18/01-07/games-overwatch-7051.jpg
+! [GENJI]:https://wallpaperscave.ru/images/original/18/01-07/games-overwatch-7051.jpg
