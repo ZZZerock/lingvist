@@ -24,3 +24,10 @@ NLTK [('мама', 'S'), ('мыла', 'V'), ('раму', 'S')]
 word='мама', tag=OpencorporaTag('NOUN
 word='мыла', tag=OpencorporaTag('NOUN
 word='раму', tag=OpencorporaTag('NOUN
+
+
+
+
+
+КОМЕНТ
+слово "мыла" Pymorphy2 считает за существительное.
