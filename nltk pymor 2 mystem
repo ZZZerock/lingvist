@@ -1,0 +1,26 @@
+import nltk
+import pymorphy2
+nltk.download('averaged_perceptron_tagger_ru')
+a=nltk.pos_tag("мама мыла раму".split(),lang="rus")
+print("NLTK",a)
+
+
+
+text = "мама мыла раму"
+text_split = text.split(" ")
+
+morph = pymorphy2.MorphAnalyzer()
+
+for a in text_split:
+	parse = morph.parse(a)[0] #метод morph.analyzer возвращает все разборы, с [0] главное
+	print("Простой разбор", parse)
+
+
+
+
+
+ВЫВОД
+NLTK [('мама', 'S'), ('мыла', 'V'), ('раму', 'S')]
+word='мама', tag=OpencorporaTag('NOUN
+word='мыла', tag=OpencorporaTag('NOUN
+word='раму', tag=OpencorporaTag('NOUN
