@@ -1,0 +1,18 @@
+import csv
+import re
+from fuzzywuzzy import fuzz
+from fuzzywuzzy import process
+from nltk.tokenize import word_tokenize
+with open('greedy.csv', newline='', encoding = 'utf8') as File:
+  reader = csv.reader(File)
+  included_cols = [1]
+  for row in reader:
+    content = list(row[1] for i in included_cols)
+    for line in content:
+      #tokens = word_tokenize(line)
+      #result = re.findall(r'(с|С)ол(ё|е)ный огурец)', line)
+      result = re.findall(r'((с|C)олёный огурец|(с|C)оленый огурец)', line)
+      #print(line)
+      if len(result)>0:
+        res = fuzz.ratio(line, 'Соленый огурец, по полу валяется, никто его не ест')
+        print(res, end = ' ')
