@@ -1,0 +1,32 @@
+doc = {}
+with open('text_for_test.txt', encoding='utf-8') as rea:
+  rea = rea.read()
+  text =rea.replace('?', '.').replace('!', '.').replace('...', '.').replace('—', ' ')
+  for i in text.split("."):
+      doc[i] = len([j for j in i.split() if len(j)==1 ])
+  length = text.split(' ')
+  countword = text.count('.')
+print(len(length)/countword)
+k = [(value, key) for key, value in doc.items()]
+print ("В предложении ", max(k)[1], "больше всего односимвольных слов: ", max(k)[0], end = "\n") 
+
+
+
+
+
+
+
+import collections
+def compute_tf(text):
+    text = collections.Counter(text)
+    for i in text:        
+        text[i] = text[i]/float(len(text))
+    return text
+arr = []
+with open('text_for_test.txt', 'r', encoding='utf-8' ) as rea:
+    words = rea.read()
+    for i in words.split():
+        arr.append (word)  
+tfword = input("Введите слово, частотность которого вы хотите посчитать ")      
+a = compute_tf(arr)
+print(a[tfword])
